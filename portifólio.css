@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "fonte-arredondada";
+  src: url(./nevermind-rounded/NeverMindRounded/NeverMindRounded-Bold.ttf);
+}
+
+@media screen and (max-width: 1800px) {
+  html,
+  body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url(./Img/fundo-port.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .title {
+    display: inline;
+    padding-left: 2%;
+    font-family: "fonte-arredondada";
+    color: rgb(0, 81, 255);
+  }
+
+  .title::before {
+    margin: 0%;
+    padding: 0%;
+    content: ".";
+    font-size: 70px;
+    color: rgb(0, 89, 255);
+  }
+
+  ul {
+    display: inline;
+    font-family: "fonte-arredondada";
+    position: relative;
+    left: 10%;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 3%;
+    font-size: 23px;
+    cursor: pointer;
+  }
+
+  li:hover {
+    color: rgb(0, 81, 255);
+    padding: 0.1%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  ul {
+    display: inline;
+    font-family: "fonte-arredondada";
+    position: relative;
+    left: 7%;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  ul {
+    display: inline;
+    font-family: "fonte-arredondada";
+    position: relative;
+    left: 1%;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  ul {
+    font-family: "fonte-arredondada";
+    position: relative;
+    left: 5%;
+    list-style: none;
+  }
+
+  li {
+    display: block;
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul {
+    font-family: "fonte-arredondada";
+    position: relative;
+    left: 5%;
+    list-style: none;
+  }
+
+  li {
+    display: block;
+    margin-bottom: 3%;
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .title::before {
+    font-size: 50px;
+  }
+}
