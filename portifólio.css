@@ -2,110 +2,80 @@
   font-family: "fonte-arredondada";
   src: url(./nevermind-rounded/NeverMindRounded/NeverMindRounded-Bold.ttf);
 }
-
-@media screen and (max-width: 1800px) {
-  html,
-  body {
-    margin: 0%;
-    padding: 0%;
-    background-image: url(./Img/fundo-port.png);
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  background: linear-gradient(90deg, rgb(255, 255, 255), 20%, gray);
+  /* background-image: url(./Img/fundo-port.png);
     background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .content {
-    position: relative;
-  }
-
-  .title {
-    display: inline;
-    padding-left: 2%;
-    font-family: "fonte-arredondada";
-    color: rgb(0, 81, 255);
-  }
-
-  .title::before {
-    margin: 0%;
-    padding: 0%;
-    content: ".";
-    font-size: 70px;
-    color: rgb(0, 89, 255);
-  }
-
-  ul {
-    display: inline;
-    font-family: "fonte-arredondada";
-    position: relative;
-    left: 10%;
-    list-style: none;
-  }
-
-  li {
-    display: inline-block;
-    margin-left: 3%;
-    font-size: 23px;
-    cursor: pointer;
-  }
-
-  li:hover {
-    color: rgb(0, 81, 255);
-    padding: 0.1%;
-  }
+    background-size: cover; */
 }
 
-@media screen and (max-width: 1000px) {
-  ul {
-    display: inline;
-    font-family: "fonte-arredondada";
-    position: relative;
-    left: 7%;
-    list-style: none;
-  }
+.content,
+header {
+  position: relative;
+  max-width: 1500px;
 }
 
-@media screen and (max-width: 800px) {
-  ul {
-    display: inline;
-    font-family: "fonte-arredondada";
-    position: relative;
-    left: 1%;
-    list-style: none;
-  }
+.title {
+  position: relative;
+  margin-left: 3.5%;
+  display: inline;
+  font-family: "fonte-arredondada";
+  color: rgb(0, 81, 255);
 }
 
-@media screen and (max-width: 750px) {
-  ul {
-    font-family: "fonte-arredondada";
-    position: relative;
-    left: 5%;
-    list-style: none;
-  }
-
-  li {
-    display: block;
-    margin-bottom: 3%;
-  }
+.title::before {
+  content: ".";
+  font-size: 55px;
+  color: rgb(0, 89, 255);
 }
 
-@media screen and (max-width: 400px) {
-  ul {
-    font-family: "fonte-arredondada";
-    position: relative;
-    left: 5%;
-    list-style: none;
-  }
+.title:hover {
+  color: rgb(160, 160, 160);
+}
+.title:hover:before {
+  color: rgb(160, 160, 160);
+}
 
-  li {
-    display: block;
-    margin-bottom: 3%;
-    font-size: 15px;
-  }
+ul {
+  display: inline;
+  font-family: "fonte-arredondada";
+  position: relative;
+  left: 10%;
+  list-style: none;
+}
 
-  .title {
-    font-size: 20px;
-  }
+.l1 {
+  margin-left: 7%;
+}
 
-  .title::before {
-    font-size: 50px;
-  }
+li {
+  display: inline-block;
+  margin-left: 3%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: rgb(0, 81, 255);
+  padding: 0.1%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.gitHub {
+  position: relative;
+  left: 30%;
+  top: 10px;
+}
+.linkedin {
+  position: relative;
+  left: 32%;
+  top: 10px;
+  border-radius: 5px;
 }
